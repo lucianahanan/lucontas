@@ -1,9 +1,9 @@
 import axios from 'axios';
 
-let currentUrl = (window.location.href === process.env.REACT_APP_API_URL ? process.env.REACT_APP_API_URL : 'https://lucontas-lucianahanan.vercel.app/');
+let currentUrl = process.env.REACT_APP_API_URL;
 
-if( window.location.href === 'http://localhost:3000/') {
-  currentUrl = process.env.REACT_APP_API_URL;
+if( window.location.href !== 'http://localhost:3000/' && window.location.href !== 'https://lucontas.vercel.app/' ) {
+  currentUrl = 'https://lucontas-lucianahanan.vercel.app/';
 }
 
 console.log(process.env.REACT_APP_API_URL);
