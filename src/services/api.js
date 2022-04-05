@@ -6,8 +6,10 @@ if( window.location.href !== 'http://localhost:3000/' && window.location.href !=
   currentUrl = 'https://lucontas-lucianahanan.vercel.app/api';
 }
 
-console.log(process.env.REACT_APP_API_URL);
-console.log(currentUrl);
+currentUrl = '/api';
+
+//console.log(process.env.REACT_APP_API_URL);
+//console.log(currentUrl);
 
 export const api = axios.create({
 // baseURL: 'http://localhost:3000/api',
@@ -15,3 +17,7 @@ export const api = axios.create({
   baseURL: currentUrl,
   headers: {}
 })
+
+//TODO : Test the base URL as baseURL: '/api'
+//
+// Test if the host logic can be removed and simplified to not need the url testings on different hosts.
