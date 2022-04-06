@@ -32,7 +32,7 @@ export function Summary() {
     <Container>
       <div>
         <header>
-          <p>Entradas</p>
+          <p>Entradas Test</p>
           <img src={incomeImg} alt="Entradas" />
         </header>
         <strong>
