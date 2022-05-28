@@ -1,9 +1,8 @@
 # luh-contas
-ReactJS and styled components project
 
 <h2>luh - Contas</h2>
 
-<strong>Task:</strong> Make a CRUD app, with Local Storage persistence. Using:
+<strong>Project:</strong> Make a CRUD app with Local Storage persistence. Using:
 
 <ul>
   <li>React.js</li>
